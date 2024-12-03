@@ -24,4 +24,4 @@ elif x>60:
 elif x>35:
     print('C')
 else:
-    print('F')
+    print('Fsdfdggg')
