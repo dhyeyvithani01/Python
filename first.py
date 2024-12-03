@@ -66,10 +66,14 @@ DVBDVJKN"""
 # print(x)
 # print(type(x))
 
-x = 10.3
-y = 23.6
+# x = 10.3
+# y = 23.6
 
-print(x+y)
+# print(x+y)
+
+
+x = y = z = "hello world"
+print(x,y,z)
 
 
 # int
