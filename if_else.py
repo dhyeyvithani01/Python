@@ -1,3 +1,4 @@
+"""if elif-else conditional statments"""
 # if 5<3:
 #     print("right")
 # elif 10>45:
@@ -11,17 +12,30 @@
 
 # <,>,==,!=,<=,>=
 
-print("grade:")
-x = 93.50
-if x==0:
-    print('Enter Valid marks')
-elif x>=90:
-    print('A1')
-elif x>80:
-    print('A')
-elif x>60:
-    print('B')
-elif x>35:
-    print('C')
+# print("grade:")
+# x = 93.50
+# if x==0:
+#     print('Enter Valid marks')
+# elif x>=90:
+#     print('A1')
+# elif x>80:
+#     print('A')
+# elif x>60:
+#     print('B')
+# elif x>35:
+#     print('C')
+# else:
+#     print('F')
+
+"""nested if else"""
+grade = int(input("enter your grade:"))
+if grade > 80:
+    print("A")
 else:
-    print('F')
+    if grade > 60:
+        print("B")
+    else:
+        if grade > 40:
+            print("C")
+        else:
+            print("Fail")
