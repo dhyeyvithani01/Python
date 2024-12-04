@@ -1,3 +1,5 @@
-for letter in 'geeksforgeeks':
-    if letter == 'e' or letter == 's':
-        print('Current Letter :', letter)
+count = 0
+
+while (count > -1):
+    count = count + 1
+    print(count)
