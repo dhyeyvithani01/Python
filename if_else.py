@@ -27,15 +27,22 @@
 # else:
 #     print('F')
 
-"""nested if else"""
-grade = int(input("enter your grade:"))
-if grade > 80:
-    print("A")
-else:
-    if grade > 60:
-        print("B")
-    else:
-        if grade > 40:
-            print("C")
-        else:
-            print("Fail")
+# """nested if else"""
+# grade = float(input("enter your grade:"))
+# if grade > 80:
+#     print("A")
+# else:
+#     if grade > 60:
+#         print("B")
+#     else:
+#         if grade > 40:
+#             print("C")
+#         else:
+#             print("Fail")
+
+"""ternary if else"""
+# a,b = int(input())
+# print(a,b)
+a = float(input("Enter the value of A:"))
+b = float(input("Enter the value of B:"))
+print("A is equal to B" if a==b else "A is greater than B"if a>b else "B is greater than A")
