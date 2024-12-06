@@ -41,23 +41,30 @@
 #             print("Fail")
 
 
-x = int(input('enter the age:'))
-if 1<=x<18:
-    print("Children")
-elif 18<=x<36:
-    print("Mrg")
-elif 36<=x<58:
-    print("kam")
-elif 58<=x<65:
-    print("goa")
-elif 65<=x<73:
-    print("temple")
-elif x>=73:
-    print("Death")
+# x = int(input('enter the age:'))
+# if 1<=x<18:
+#     print("Children")
+# elif 18<=x<36:
+#     print("Mrg")
+# elif 36<=x<58:
+#     print("kam")
+# elif 58<=x<65:
+#     print("goa")
+# elif 65<=x<73:
+#     print("temple")
+# elif x>=73:
+#     print("Death")
 
-"""ternary if else"""
-# a,b = int(input())
-# print(a,b)
-a = float(input("Enter the value of A:"))
-b = float(input("Enter the value of B:"))
-print("A is equal to B" if a==b else "A is greater than B"if a>b else "B is greater than A")
+# """ternary if else"""
+# # a,b = int(input())
+# # print(a,b)
+# a = float(input("Enter the value of A:"))
+# b = float(input("Enter the value of B:"))
+# print("A is equal to B" if a==b else "A is greater than B"if a>b else "B is greater than A")
+
+""""odd-even"""
+x = int(input("Enter any number:"))
+if x%2==0:
+    print("The given number is Even.")
+else:
+    print("The given number is Odd.")
