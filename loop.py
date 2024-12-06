@@ -27,9 +27,23 @@
 
 
 """"odd-even"""
-x = int(input("Enter any number:"))
-for x in range(x):
-    if x%2==0:
-        print("The",x,"is Even.")
+# x = int(input("Enter any number:"))
+# for x in range(x):
+#     if x%2==0:
+#         print("The",x,"is Even.")
+#     else:
+#         print("The",x,"is Odd.")
+
+
+# x = 10
+
+# for i in range(0,10,3):
+#     print(i)
+
+a = input("enter you name:")
+for x in a:
+    if x!=" ":
+        print(x,end="")
     else:
-        print("The",x,"is Odd.")
+        break
+    
