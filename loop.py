@@ -1,5 +1,4 @@
 # count = 0
-
 # while (count > -1):
 #     count = count + 1
 #     print(count)
@@ -26,6 +25,12 @@
 #         print("death")
 
 
+    
+print("\nDictionary Iteration")
+d = dict({'x':123, 'y':354})
+for i in d:
+    print("%s  %d" % (i, d[i]))
+
 """"odd-even"""
 # x = int(input("Enter any number:"))
 # for x in range(x):
@@ -46,4 +51,5 @@ for x in a:
         print(x,end="")
     else:
         break
+
     
