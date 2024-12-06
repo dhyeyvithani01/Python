@@ -30,7 +30,7 @@ print("\nDictionary Iteration")
 d = dict({'x':123, 'y':354})
 for i in d:
     print("%s  %d" % (i, d[i]))
-
+ 
 """"odd-even"""
 # x = int(input("Enter any number:"))
 # for x in range(x):
