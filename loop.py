@@ -54,14 +54,14 @@
 
     
 # print("hello")
-for x in range(24,0,-2):
-    if x==16:
-        continue
-    elif x==4:
-        print(x)
-    elif x == 2:
-        pass
-    print(x)
+# for x in range(24,0,-2):
+#     if x==16:
+#         continue
+#     elif x==4:
+#         print(x)
+#     elif x == 2:
+#         pass
+#     print(x)
 
 
 
@@ -71,3 +71,8 @@ for x in range(24,0,-2):
 #     elif x == 14:
 #         break
 #     print(x)
+
+x = 1
+while x<=10:
+    print(x)
+    x+=1
