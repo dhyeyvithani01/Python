@@ -80,10 +80,13 @@
 
 
 """"odd even in while loop"""
-x = 1
-while x<11:
-    if x%2==0:
-        print(f"the {x} is even.")
-    else:
-        print(f"the {x} is odd.")
-    x+=1
+# x = 1
+# while x<11:
+#     if x%2==0:
+#         print(f"the {x} is even.")
+#     else:
+#         print(f"the {x} is odd.")
+#     x+=1
+
+
+
