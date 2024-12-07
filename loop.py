@@ -72,7 +72,18 @@
 #         break
 #     print(x)
 
+"""while loop"""
+# x = 1
+# while x<=10:
+#     print(x)
+#     x+=1
+
+
+""""odd even in while loop"""
 x = 1
-while x<=10:
-    print(x)
+while x<11:
+    if x%2==0:
+        print(f"the {x} is even.")
+    else:
+        print(f"the {x} is odd.")
     x+=1
