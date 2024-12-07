@@ -89,4 +89,17 @@
 #     x+=1
 
 
-
+"""check prime in while loop"""
+# x = int(input("Enter a whole number:"))
+# y=2
+# if x%1==0 & x%x==0:
+#     while x!=y:
+#         if x/y!=1:
+#             print(f"{x} is not a prime number.")
+#             break
+#         else:
+#             y+=1
+#     else:
+#         print(f"{x} is a prime number.")
+# else:
+#     print("enter a whole number!")
