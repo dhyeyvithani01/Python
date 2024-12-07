@@ -58,7 +58,9 @@ for x in range(24,0,-2):
     if x==16:
         continue
     elif x==4:
-        break
+        print(x)
+    elif x == 2:
+        pass
     print(x)
 
 
