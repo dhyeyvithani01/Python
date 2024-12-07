@@ -45,11 +45,17 @@
 # for i in range(0,10,3):
 #     print(i)
 
-a = input("enter you name:")
-for x in a:
-    if x!=" ":
-        print(x,end="")
-    else:
-        break
+# a = input("enter you name:")
+# for x in a:
+#     if x!=" ":
+#         print(x,end="")
+#     else:
+#         break
 
+    
+print("hello")
+for x in range(24,0,-2):
+    if x==16:
+        break
+    print(x)
     
