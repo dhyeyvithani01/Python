@@ -53,9 +53,19 @@
 #         break
 
     
-print("hello")
+# print("hello")
 for x in range(24,0,-2):
     if x==16:
+        continue
+    elif x==4:
         break
     print(x)
-    
+
+
+
+# for x in range(1,20):
+#     if x == 10:
+#         continue
+#     elif x == 14:
+#         break
+#     print(x)
