@@ -62,9 +62,10 @@
 # b = float(input("Enter the value of B:"))
 # print("A is equal to B" if a==b else "A is greater than B"if a>b else "B is greater than A")
 
-""""odd-even"""
-x = int(input("Enter any number:"))
-if x%2==0:
-    print("The given number is Even.")
-else:
-    print("The given number is Odd.")
+# """"odd-even"""
+# x = int(input("Enter any number:"))
+# if x%2==0:
+#     print("The given number is Even.")
+# else:
+#     print("The given number is Odd.")
+
