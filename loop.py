@@ -90,16 +90,23 @@
 
 
 """check prime in while loop"""
-# x = int(input("Enter a whole number:"))
-# y=2
-# if x%1==0 & x%x==0:
-#     while x!=y:
-#         if x/y!=1:
-#             print(f"{x} is not a prime number.")
-#             break
-#         else:
-#             y+=1
-#     else:
-#         print(f"{x} is a prime number.")
-# else:
-#     print("enter a whole number!")
+
+
+
+
+# for i in range(1,10):
+#     pass
+
+# x = [1,2,[3,4,5,[6,7],8,9],10,11,12]
+# print(x[2][3][0])
+
+
+# for x in "banana":
+#     print(x)    
+
+# x=0
+# while x < len("banana"):
+#     print("banana"[x])
+#     x+=1
+    
+print("banana"[0])
