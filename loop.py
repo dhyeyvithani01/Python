@@ -117,14 +117,14 @@
 #         print(x,y)
 
 """Phibonachi sequence"""
-a=0
-b=1
-while a<35:
-    print(a)
-    a,b = b,a+b
+# a=0
+# b=1
+# while a<35:
+#     print(a)
+#     a,b = b,a+b
 
-a, b = 0, 1
-n = int(input("enter the number: "))
-for i in range(n):
-    print(a)
-    a, b = b, a + b
+# a, b = 0, 1
+# n = int(input("enter the number: "))
+# for i in range(n):
+#     print(a)
+#     a, b = b, a + b
