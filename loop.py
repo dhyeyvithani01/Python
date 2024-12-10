@@ -100,7 +100,7 @@
 # x = [1,2,[3,4,5,[6,7],8,9],10,11,12]
 # print(x[2][3][0])
 
-
+"""print banana in row"""
 # for x in "banana":
 #     print(x)    
 
@@ -108,5 +108,9 @@
 # while x < len("banana"):
 #     print("banana"[x])
 #     x+=1
-    
-print("banana"[0])
+
+adj = ["red","big","tasty"]
+fruits = ["apple","banana","cherry"]
+for x in adj:
+    for y in fruits:
+        print(x,y)
