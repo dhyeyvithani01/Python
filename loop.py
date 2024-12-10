@@ -128,3 +128,26 @@
 # for i in range(n):
 #     print(a)
 #     a, b = b, a + b
+
+
+"""printing 1 to 20 using while loop, continue and break """
+# i=0
+# while i<8:
+#     print(i)
+#     i+=1
+#     if i==5:
+#         continue
+# j=8
+# while j==8:
+#     break
+# k=9
+# while 8<k<15:
+#     print(k)
+#     k+=1
+# a=15
+# while a==15:
+#     break
+# b=16
+# while 15<b<=20:
+#     print(b)
+#     b+=1
