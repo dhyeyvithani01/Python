@@ -109,8 +109,9 @@
 #     print("banana"[x])
 #     x+=1
 
-adj = ["red","big","tasty"]
-fruits = ["apple","banana","cherry"]
-for x in adj:
-    for y in fruits:
-        print(x,y)
+"""printing adj and fruits using nested for loop"""
+# adj = ["red","big","tasty"]
+# fruits = ["apple","banana","cherry"]
+# for x in adj:
+#     for y in fruits:
+#         print(x,y)
