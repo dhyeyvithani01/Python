@@ -55,11 +55,14 @@
 # d.sort(reverse=True)
 # print(d)
 
-x,y,z=1,[1,2,3.5,[25,'name',[2,5,7]]],[10,20,0,["hyy",7],'10.5',"world"]
-print(z)
-print(z[1:2])
-print(z[-4:-1])
-print(z[-1:-4:-1])
-print(z[5:2:-1])
-print(z[1],z[3])
-print(y[3][2][2])
+# x,y,z=1,[1,2,3.5,[25,'name',[2,5,7]]],[10,20,0,["hyy",7],'10.5',"world"]
+# print(z)
+# print(z[1:2])
+# print(z[-4:-1])
+# print(z[-1:-4:-1])
+# print(z[5:2:-1])
+# print(z[1],z[3])
+# print(y[3][2][2])
+
+x = 'my name is dhyey'
+print(x[9:7:-1])
