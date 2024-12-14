@@ -11,12 +11,12 @@
 # print(type(x))
 
 """tuple"""
-x = (1,2,5.6,'dhyey',5,8,9)
-print(x)
+# x = (1,2,5.6,'dhyey',5,8,9)
+# print(x)
 # print(x[2])
 # print(type(x))
 # print(x[::-1])
 
-print("hello")
+# print("hello")
 
-print("vfsdv")
+# print("vfsdv")
