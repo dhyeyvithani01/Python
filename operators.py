@@ -69,7 +69,8 @@
 
 # x = "Hello "
 # print('H' in x)
-
+x = {1:1,2:3,3:7}
+print(3 in x)
 
 
 
@@ -83,9 +84,13 @@
 
 # Python program to illustrate the use
 # of 'is' and '==' operators
-# a = [1, 2, 3]
-# b = [1, 2, 3]
+a = [1, 2, 3]
+b = [1, 2, 3]
+x = {1:'hello',2:3.5,3:7.9}
+y = {1:'hello',2:3.5,3:7.9}
 
 # using 'is' and '==' operators
-# print(a in b)
-# print(a == b)
+print(a is b)
+print(a == b)
+print(x is y)
+print(x == y)
