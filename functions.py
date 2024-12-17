@@ -37,7 +37,7 @@ def Divisibilty_Check():
 
 """marks to grade converter"""
 def Result():
-    marks = int(input("Enter your marks:"))
+    marks = float(input("Enter your marks:"))
     if 100<marks:
         print("Enter marks between 0 and 100")
     elif 100>=marks>80:
