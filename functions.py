@@ -28,31 +28,30 @@ def Divisibilty_Check():
         x = int(input("Enter a first number:"))
         y = int(input("Enter a second number:"))
         if x//y == x/y:
-            print("The {x} is dividable by {y}.") 
+            print(f"The {x} is dividable by {y}.") 
         else:
-            print("The {x} is dividable by {y}.")
+            print(f"The {x} is dividable by {y}.")
         a = int(input("Enter 0 to end program:\nEnter 1 to run again program:\n"))
     else:
         print("Program ended.")
 
-# """marks to grade converter"""
-# def Result():
-#     marks = int(input("Enter your marks:"))
-#     if 100<marks:
-#         print("Enter marks between 0 and 100")
-#     elif 100>=marks>80:
-#         print("A")
-#     elif marks>60:
-#         print("B")
-#     elif marks>40:
-#         print("C")
-#     elif marks>=35:
-#         print("D")
-#     elif 0<=marks<35:
-#         print("F")
-#     elif marks<0:
-#         print("Enter marks between 0 and 100")
-# Result()
+"""marks to grade converter"""
+def Result():
+    marks = int(input("Enter your marks:"))
+    if 100<marks:
+        print("Enter marks between 0 and 100")
+    elif 100>=marks>80:
+        print("A")
+    elif marks>60:
+        print("B")
+    elif marks>40:
+        print("C")
+    elif marks>=35:
+        print("D")
+    elif 0<=marks<35:
+        print("F")
+    elif marks<0:
+        print("Enter marks between 0 and 100")
 
 
 
@@ -64,6 +63,9 @@ def Divisibilty_Check():
 
 
 
-# A=int(input("print 1 to run Divisibilty_Check() program."))
-# if A == 1:
-#     Divisibilty_Check()
+
+A=int(input("print 1 to run Divisibilty_Check() program.\nprint 2 to run Result() program:\n"))
+if A == 1:
+    Divisibilty_Check()
+elif A==2:
+    Result()
