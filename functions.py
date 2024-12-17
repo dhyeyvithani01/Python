@@ -1,10 +1,4 @@
 # A simple Python function
-# def odd_even():
-#     number = int(input("Enter any number:"))
-#     if number%2==0:
-#         print("The given number is Even.")
-#     else:
-#         print("The given number is Odd.")
 
 
 
@@ -59,6 +53,13 @@ def Compare_value():
     b = float(input("Enter the value of B:"))
     print("A is equal to B" if a==b else "A is greater than B"if a>b else "B is greater than A")
 
+"""Odd even"""
+def odd_even():
+    number = int(input("Enter any number:"))
+    if number%2==0:
+        print("The given number is Even.")
+    else:
+        print("The given number is Odd.")
 
 
 
@@ -66,11 +67,12 @@ def Compare_value():
 
 
 
-
-A=int(input("print 1 to run Divisibilty_Check() program.\nprint 2 to run Result() program\nprint 3 to run Compare_value():\n"))
+A=int(input("print 1 to run Divisibilty_Check() program.\nprint 2 to run Result() program.\nprint 3 to run Compare_value().\nprint 4 to run odd_even() program:\n"))
 if A == 1:
     Divisibilty_Check()
 elif A==2:
     Result()
 elif A==3:
     Compare_value()
+elif A==4:
+    odd_even()
