@@ -13,8 +13,10 @@
 
 
 
-# def hello():
+# def hello(x):
 #     print('hello world')
-# hello()
+#     print(x)
 
-
+# # inbilt function 
+# print('hello')
+# hello(10)
