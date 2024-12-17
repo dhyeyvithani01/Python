@@ -60,10 +60,6 @@ def Phibonachi():
         print(a)
         a, b = b, a + b
 
-
-
-
-
 A=int(input("print 1 to run Divisibilty_Check() program.\nprint 2 to run Result() program.\nprint 3 to run Compare_value().\nprint 4 to run odd_even() program.\nprint 5 to Phibonachi() program.:\n"))
 if A == 1:
     Divisibilty_Check()
