@@ -88,3 +88,5 @@ elif A==3:
     Compare_value()
 elif A==4:
     odd_even()
+elif A==5:
+    Phibonachi()
