@@ -53,6 +53,11 @@ def Result():
     elif marks<0:
         print("Enter marks between 0 and 100")
 
+"""Comparing values"""
+def Compare_value():
+    a = float(input("Enter the value of A:"))
+    b = float(input("Enter the value of B:"))
+    print("A is equal to B" if a==b else "A is greater than B"if a>b else "B is greater than A")
 
 
 
@@ -62,10 +67,10 @@ def Result():
 
 
 
-
-
-A=int(input("print 1 to run Divisibilty_Check() program.\nprint 2 to run Result() program:\n"))
+A=int(input("print 1 to run Divisibilty_Check() program.\nprint 2 to run Result() program\nprint 3 to run Compare_value():\n"))
 if A == 1:
     Divisibilty_Check()
 elif A==2:
     Result()
+elif A==3:
+    Compare_value()
