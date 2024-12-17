@@ -63,12 +63,6 @@ def odd_even():
 
 """Phibonachi sequence"""
 def Phibonachi():
-    a=0
-    b=1
-    while a<35:
-        print(a)
-        a,b = b,a+b
-
     a, b = 0, 1
     n = int(input("enter the number: "))
     for i in range(n):
@@ -79,7 +73,7 @@ def Phibonachi():
 
 
 
-A=int(input("print 1 to run Divisibilty_Check() program.\nprint 2 to run Result() program.\nprint 3 to run Compare_value().\nprint 4 to run odd_even() program.\nprint 5 to Phibonachi():\n"))
+A=int(input("print 1 to run Divisibilty_Check() program.\nprint 2 to run Result() program.\nprint 3 to run Compare_value().\nprint 4 to run odd_even() program.\nprint 5 to Phibonachi() program.:\n"))
 if A == 1:
     Divisibilty_Check()
 elif A==2:
