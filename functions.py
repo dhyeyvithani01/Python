@@ -30,7 +30,7 @@ def Divisibilty_Check():
         if x//y == x/y:
             print(f"The {x} is dividable by {y}.") 
         else:
-            print(f"The {x} is dividable by {y}.")
+            print(f"The {x} is not dividable by {y}.")
         a = int(input("Enter 0 to end program:\nEnter 1 to run again program:\n"))
     else:
         print("Program ended.")
