@@ -1,12 +1,3 @@
-# A simple Python function
-
-
-
-# # Driver code to call a function
-# odd_even()
-
-
-
 # def hello(x):
 #     print('hello world')
 #     print(x)
