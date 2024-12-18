@@ -73,9 +73,19 @@ def Phibonachi():
 #     Phibonachi()
 
 
-num =5
-def hellos():
-    print(num)
+# num =5
+# def hellos():
+#     print(num)
     
-hellos()
-print(num)
+# hellos()
+# print(num)
+
+# x = [1,2,-1,-4,6.5,-23,-2.3]
+# for i in x:
+#     if i<0:
+#         print(i)
+
+# name = ["jay","jay shah","patel jay"]
+# for i in name:
+#     if len(i)==3:
+#         print(i)
