@@ -152,3 +152,8 @@
 #     print(b)
 #     b+=1
 
+x = (input("Enter your mobile number:"))
+if (len(x)==10 and x.isdigit()):
+    print(f"Your mobile number is {x}.")
+else:
+    print("Enter a valid mobile number.")
