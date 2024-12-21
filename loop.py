@@ -189,3 +189,14 @@
 # for i in range(x,0,-1):
 #     print( "*"*i )
 """patterns-3"""
+# x = int( input("Enter Row Number: ") )
+# num=1
+# for i in range(1, x+1):
+#     print(f"{num}"*i )
+#     num+=1
+"""patterns-4"""
+# x = int( input("Enter Row Number: ") )
+# num=x
+# for i in range(x,0,-1):
+#     print(f"{num}"*i )
+#     num-=1
