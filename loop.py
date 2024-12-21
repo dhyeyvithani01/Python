@@ -172,3 +172,20 @@
 #         i+=1
 #     print(result)
 # fact()
+
+"""printing stars"""
+# x=int(input("enter the number:"))
+# for i in range(x):
+#     for a in range(i):
+#         print("*")
+
+"""printing patterns"""
+"""patterns-1"""
+# x = int( input("Enter Row Number: ") )
+# for i in range(1, x+1):
+#     print( "*"*i )
+"""patterns-2"""
+# x = int( input("Enter Row Number: ") )
+# for i in range(x,0,-1):
+#     print( "*"*i )
+"""patterns-3"""
