@@ -90,10 +90,6 @@
 
 
 """check prime in while loop"""
-
-
-
-
 # for i in range(1,10):
 #     pass
 
@@ -152,8 +148,27 @@
 #     print(b)
 #     b+=1
 
-x = (input("Enter your mobile number:"))
-if (len(x)==10 and x.isdigit()):
-    print(f"Your mobile number is {x}.")
-else:
-    print("Enter a valid mobile number.")
+# x = (input("Enter your mobile number:"))
+# if (len(x)==10 and x.isdigit()):
+#     print(f"Your mobile number is {x}.")
+# else:
+#     print("Enter a valid mobile number.")
+
+"""factorial program in for loop"""
+# def factorial():
+#     x=int(input("Enter the number:"))
+#     for i in range(1,x):
+#         x=x*i
+#     print(x)
+# factorial()
+
+"""factorial program in while loop"""
+# def fact():
+#     x=int(input("Enter the number:"))
+#     result=1
+#     i=1
+#     while i<=x:
+#         result=result*i
+#         i+=1
+#     print(result)
+# fact()
