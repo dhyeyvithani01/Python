@@ -200,3 +200,11 @@
 # for i in range(x,0,-1):
 #     print(f"{num}"*i )
 #     num-=1
+"""patterns-5"""
+# x = int(input("Enter the number:"))
+# for i in range(1,x+1):
+#     print(chr(64+i)*(i))
+"""patterns-6"""
+# x = int(input("Enter the number:"))
+# for i in range(x,0,-1):
+#     print(chr(64+i)*(i))
