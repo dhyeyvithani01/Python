@@ -252,3 +252,25 @@
 #     for a in range(i,0,-1):
 #         print(f"{a}",end="")
 #     print()
+"""pattern-15"""
+# x=int(input("Enter the number:"))
+# for i in range(1,x+1):
+#     print(" "*(x-i),end="")
+#     for j in range(1,i+1):
+#         print("*",end=" ")
+#     print()
+"""pattern-16"""
+# x=int(input("Enter the number:"))
+# for i in range(x,0,-1):
+#     print(" "*(x-i),end="")
+#     for j in range(1,i+1):
+#         print("*",end=" ")
+#     print()
+"""pattern-17"""
+x=int(input("Enter the number:"))
+j=1
+for i in range(1,x+1):
+    for j in range(1,i+1):
+        print(j,end="")
+        j+=1
+    print()
