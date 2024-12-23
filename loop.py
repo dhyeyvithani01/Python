@@ -272,3 +272,17 @@
 # for i in range(1,x+1):
 #     print(f"{a} "*i)
 #     a+=2
+"""pattern-18"""
+# x=int(input("Enter the number:"))
+# for i in range(0,x+1):
+#     for j in range(0,i+1):
+#         print(i*j,end=" ")
+#     print()
+"""pattern-19"""
+x=int(input("Enter the number:"))
+num = 1
+for i in range(1, x+1):
+    for j in range(i):
+        print(num, end=" ")
+        num += 1
+    print()
