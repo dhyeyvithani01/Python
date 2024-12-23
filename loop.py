@@ -218,17 +218,30 @@
 #     for a in range(1,i+1):
 #         print(f"{a}",end="")
 #     print()
-"""Pattern-8"""
-# x =int(input("Enter the number:"))
-# for i in range(1,x+1):
-#     print(" "*(x-i)+"*"*i)
 """pattern-9"""
 # x =int(input("Enter the number:"))
 # for i in range(x,0,-1):
-#     print(" "*(x-i)+"*"*i)
-"""pattern-10"""
+#     for a in range(1,i+1):
+#         print(f"{a}",end="")
+#     print()
+"""Pattern-10"""
 # x =int(input("Enter the number:"))
 # for i in range(1,x+1):
+#     print(" "*(x-i)+"*"*i)
+"""pattern-11"""
+# x =int(input("Enter the number:"))
+# for i in range(x,0,-1):
+#     print(" "*(x-i)+"*"*i)
+"""pattern-12"""
+# x =int(input("Enter the number:"))
+# for i in range(1,x+1):
+#     print(" "*(x-i),end="")
+#     for a in range(1,i+1):
+#         print(f"{a}",end=" "*1)
+#     print()
+"""pattern-13"""
+# x =int(input("Enter the number:"))
+# for i in range(x,0,-1):
 #     print(" "*(x-i),end="")
 #     for a in range(1,i+1):
 #         print(f"{a}",end=" "*1)
