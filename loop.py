@@ -219,3 +219,7 @@
 #         print(f"{a}",end="")
 #         i+=1
 #     print()
+"""Pattern-8"""
+# x =int(input("Enter the name:"))
+# for i in range(1,x+1):
+#     print(" "*(x-i)+"*"*i)
