@@ -279,10 +279,19 @@
 #         print(i*j,end=" ")
 #     print()
 """pattern-19"""
-x=int(input("Enter the number:"))
-num = 1
-for i in range(1, x+1):
-    for j in range(i):
-        print(num, end=" ")
-        num += 1
-    print()
+# x=int(input("Enter the number:"))
+# num = 1
+# for i in range(1, x+1):
+#     for j in range(i):
+#         print(num, end=" ")
+#         num += 1
+#     print()
+"""pattern-20"""
+# x=int(input("Enter the number:"))
+# num = 1
+# for i in range(1, x+1):
+#     for j in range(2*i-1):
+#         print(num, end=" ")
+#         num += 1
+#     print()
+
