@@ -294,4 +294,41 @@
 #         print(num, end=" ")
 #         num += 1
 #     print()
-
+"""pattern-21"""
+# x =int(input("Enter the number:"))
+# for i in range(x*2,0,-2):
+#     for a in range(x*2,i-1,-2):
+#         print(a,end=" ")
+#     print()
+"""pattern-21"""
+# x=int(input("Enter the number:"))
+# for i in range(1,x+1):
+#     for j in range(1,i+1):
+#         print(j,end=" ")
+#     for j in range(i-1,0,-1):
+#         print(j,end=" ")
+#     print()
+"""pattern-22"""
+# x=int(input("Enter the number:"))
+# for i in range(1,x+1):
+#     print(" "*(x-i),end="")
+#     for j in range(1,i+1):
+#         print("*",end=" ")
+#     print()
+# for i in range(x-1,0,-1):
+#     print(" "*(x-i),end="")
+#     for j in range(1,i+1):
+#         print("*",end=" ")
+#     print()
+"""pattern-23"""
+# x=int(input("Enter the number:"))
+# for i in range(1,x+1):
+#     print(" "*(x-i),end="")
+#     for j in range(1,i+1):
+#         print(j,end=" ")
+#     print()
+# for i in range(x-1,0,-1):
+#     print(" "*(x-i),end="")
+#     for j in range(1,i+1):
+#         print(j,end=" ")
+#     print()
