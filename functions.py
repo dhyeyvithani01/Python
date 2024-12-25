@@ -112,3 +112,34 @@ def Phibonachi():
 #         print(arg)
 # myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks')
 
+
+"""lamba function"""
+# x = lambda y:(y*2,y+4,y%4)
+# print(x(20))
+
+
+# Kdot = lambda x,b,c,d:(x+b,x-c,x**d,c//d,b/x,d*b)
+# print(Kdot(5,6,7,8))
+
+# x = lambda a,b,c,d:(a+1,b+c*a,b%d,a-c)
+# print(x(4,56,23,12))
+
+
+# def myfunctionb(shanu,virani):
+#     return lambda s:(s*shanu,s+virani)
+# TG = myfunctionb(10,9)
+# print(TG(115))
+
+# def myfunc(x,y):
+#     return lambda fun_1 :(fun_1*x,fun_1/y)
+# Object_1 = myfunc(2,3)
+# print(Object_1(10))
+
+
+
+# def mydata(Djengo,panda,syntex):
+#     return lambda y,h,c: (Djengo+y, panda*h, syntex-c)
+# hii = mydata(1.2,1.3,1.4)
+# TG = mydata(1,2,3)
+# print(TG(1.2,1.3,1.4))
+# print(hii(20,30,40))
