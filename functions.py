@@ -143,3 +143,43 @@ def Phibonachi():
 # TG = mydata(1,2,3)
 # print(TG(1.2,1.3,1.4))
 # print(hii(20,30,40))
+
+
+
+
+
+#array
+
+# import array
+
+# from array import *
+
+
+# value = array('i',[1,2,3,4,5,6,7])
+
+# print(value)
+
+
+# print(value.buffer_info())
+# print(value.typecode)
+
+
+# print(value[3])
+
+
+def is_palindrome(s):
+    s = s.lower()
+    left = 0
+    right = len(s) - 1
+    while left < right:
+        if s[left] != s[right]:
+            return False
+        left += 1
+        right -= 1
+    return True
+input_string = input("Enter a string: ")
+if is_palindrome(input_string):
+    print(f'"{input_string}" is a palindrome!')
+else:
+    print(f'"{input_string}" is not a palindrome.')
+
