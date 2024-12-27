@@ -17,6 +17,14 @@ Question = [
     [
         "In which year did India launch its first mission to Mars, called 'Mangalyaan'?","2013","2009","2014","2019","A"
     ]
+    [
+        "Who invented the telephone?","Nikola Tesla","Thomas Edison","Alexander Graham Bell","Albert Einstein","C"
+    ]
 ]
 
 Level = [10000,20000,40000,80000,160000,320000,640000,1200000]
+
+for i in range(0,len(Question)):
+    print(f"Question for rs.{Level[i]} is {Question[i][0]}")
+    print(f"A. {Question[i][1]}  B. {Question[i][2]}")
+    print(f"C. {Question[i][3]}  D. {Question[i][4]}")
