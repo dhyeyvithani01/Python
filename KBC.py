@@ -16,7 +16,7 @@ Question = [
     ],
     [
         "In which year did India launch its first mission to Mars, called 'Mangalyaan'?","2013","2009","2014","2019","A"
-    ]
+    ],
     [
         "Who invented the telephone?","Nikola Tesla","Thomas Edison","Alexander Graham Bell","Albert Einstein","C"
     ]
@@ -35,4 +35,4 @@ for i in range(0,len(Question)):
 
     else:
         print("Wrong answer!")
-    break
+        break;
