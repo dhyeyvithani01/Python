@@ -31,7 +31,7 @@ for i in range(0,len(Question)):
 
     reply = str(input("Enter your answer:"))
     if reply==Question[i][5]:
-        print(f"Correct answear, you have win Rs.{Levelevel[i]}")
+        print(f"Correct answear, you have win Rs.{Level[i]}")
 
     else:
         print("Wrong answer!")
