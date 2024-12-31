@@ -81,12 +81,12 @@ DVBDVJKN"""
 # x = y = z = "hello world"
 # print(x,y,z)
 """rounding the float number to specific digit"""
-import math
-x = round(math.pi,7)
-print(x)
+# import math
+# x = round(math.pi,7)
+# print(x)
 
-x = math.pi
-print(f"{x:.9f}")
+# x = math.pi
+# print(f"{x:.9f}")
 
 # int
 # String
