@@ -268,3 +268,6 @@ def Phibonachi():
 # # Run the game
 # guessing_game()
 
+# import qrcode
+# x = qrcode.make("https://www.w3schools.com/python/trypython.asp?filename=demo_default")
+# x.save('1.png')
