@@ -26,6 +26,12 @@ DVBDVJKN"""
 
 # print(x+y)
 
+# x = (input('enter your number : '))
+
+# y = (input('enter your number : '))
+
+# print(int(x)+int(y))
+
 
 # variables
 
