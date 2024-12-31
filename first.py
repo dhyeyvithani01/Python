@@ -72,15 +72,18 @@ DVBDVJKN"""
 # print(x)
 # print(type(x))
 
-x = int(input("Enter the first number:"))
-y = int(input("Enter the second number:"))
-z=x+y
+# x = int(input("Enter the first number:"))
+# y = int(input("Enter the second number:"))
+# z=x+y
 """here";," is used to add coma between zero acoording to us digit system."""
-print(f"{z:,}")
+# print(f"{z:,}")
 
 # x = y = z = "hello world"
 # print(x,y,z)
-
+"""rounding the float number to specific digit"""
+# import math
+# x = round(math.pi,7)
+# print(x)
 
 # int
 # String
