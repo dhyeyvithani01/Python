@@ -65,19 +65,19 @@
 # Guessing_game()
 
 """Probabilty """
-import random
-Data_size = int(input("Enter the datasize:"))
-a=0
-Heads = 0
-Tails = 0
-while a<=Data_size:
-    x=random.randint(1,2)
-    if x==1:
-        Heads+=1
-        print("Heads")
-    else:
-        Tails+=1
-        print("Tails")
-    a+=1
-print(f"Probabilty of Head is{Heads/(Heads+Tails)}")
-print(f"Probabilty of Tails is{Tails/(Heads+Tails)}")
+# import random
+# Data_size = int(input("Enter the datasize:"))
+# a=0
+# Heads = 0
+# Tails = 0
+# while a<=Data_size:
+#     x=random.randint(1,2)
+#     if x==1:
+#         Heads+=1
+#         print("Heads")
+#     else:
+#         Tails+=1
+#         print("Tails")
+#     a+=1
+# print(f"Probabilty of Head is{Heads/(Heads+Tails)}")
+# print(f"Probabilty of Tails is{Tails/(Heads+Tails)}")
