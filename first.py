@@ -72,14 +72,14 @@ DVBDVJKN"""
 # print(x)
 # print(type(x))
 
-# x = 10.3
-# y = 23.6
+x = int(input("Enter the first number:"))
+y = int(input("Enter the second number:"))
+z=x+y
+"""here";," is used to add coma between zero acoording to us digit system."""
+print(f"{z:,}")
 
-# print(x+y)
-
-
-x = y = z = "hello world"
-print(x,y,z)
+# x = y = z = "hello world"
+# print(x,y,z)
 
 
 # int
