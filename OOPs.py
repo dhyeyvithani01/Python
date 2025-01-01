@@ -16,7 +16,6 @@
 #     def config(self):
 #         print("Hello bro")
 
-
 # Com1 = Com()
 # Com2 = Com()
 
@@ -24,3 +23,14 @@
 # # Com.config(Com2)
 
 # Com1.config()
+
+class Addition:
+
+    A=2
+    B=1
+    def Sum(A,B):
+        print(A+B)
+    Sum(A,B)
+
+print(Addition)
+
