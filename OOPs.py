@@ -1,25 +1,26 @@
-class Demo:
+# class Demo:
 
-    def config(self):
-        print("Hello my name")
+#     def config():
+#         print("Hello my name")
+#     config()
 
-
-
-q = 8
-print(type(q))
-Hello = Demo
-
-print(type(Hello))
+#     def dh():
+#         print("dfghj")
+#     dh()
+# print(Demo)
 
 
-class Com:
 
-    def config(self):
-        print("Hello bro")
+# class Com:
+
+#     def config(self):
+#         print("Hello bro")
 
 
-Com1 = Com()
-Com2 = Com()
+# Com1 = Com()
+# Com2 = Com()
 
-Com.config(Com1)
-Com.config(Com2)
+# # Com.config(Com1)
+# # Com.config(Com2)
+
+# Com1.config()
