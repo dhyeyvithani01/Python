@@ -82,3 +82,13 @@
 #         print("x and y are not equal.")
 #     case False:
 #         print("x and y are equal.")
+
+
+# name = input("What's your name:\n")
+# match name:
+#     case "Harry"|"Hermione"|"Ron":
+#         print("Gryffindor")
+#     case "Draco":
+#         print("Slythrein")
+#     case _:
+#         print("Who?")
