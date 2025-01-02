@@ -25,3 +25,18 @@
 # f,l = x.split(" ")
 # print(f)
 # x = input("Enter the name:").strip().title()
+
+
+# """Printing hello using def"""
+# def main():
+#     number=get_number()
+#     hello(number)
+# def get_number():
+#     while True:
+#         n=int(input("Enter the number:"))
+#         if n>0:
+#             return n
+# def hello(n):
+#     for i in range(n):
+#         print("Hello")
+# main()
