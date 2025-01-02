@@ -24,13 +24,38 @@
 
 # Com1.config()
 
-class Addition:
+# class Addition:
 
-    A=2
-    B=1
-    def Sum(A,B):
-        print(A+B)
-    Sum(A,B)
+#     A=2
+#     B=1
+#     def Sum(A,B):
+#         print(A+B)
+#     Sum(A,B)
 
-print(Addition)
+# print(Addition)
 
+
+
+
+
+# class Dog:
+#     species = "Canine"  # Class attribute
+
+#     def __init__(self, name, age):
+#         self.name = name  # Instance attribute
+#         self.age = age  # Instance attribute
+
+
+# dog1 = Dog("Buddy", 3)
+
+# print(dog1.name) 
+# print(dog1.age)
+
+
+
+
+# hello = [1,2,3,4,5]
+# its = iter(hello)
+# print(next(its))
+# print(next(its))
+# print(its.__next__())
