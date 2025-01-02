@@ -48,3 +48,11 @@ print(x/y)"""
 
 # student={"name":{1:"hello"}}
 # print(student["name"][1])
+
+# students={
+#     "Harry":"Poter",
+#     "Ron":"voughn",
+#     "Draco":"Joe"
+# }
+# for First_name in students:
+#     print(First_name,students[First_name])
