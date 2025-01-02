@@ -68,11 +68,17 @@
 # def main():
 #     x=int(input("Enter the size:"))
 #     print_square(x)
-
+"""Def square"""
+"""method-1"""
 # def print_square(Size):
 #     for i in range(Size):
 #         for j in range(Size):
 #             print("#  ",end="")
 #         print()
+"""method-2"""
+# def print_square(Size):
+#     for i in range(Size):
+#         print("#  "*Size)
+
 
 # main()
