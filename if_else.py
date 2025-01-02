@@ -70,5 +70,15 @@
 #     print("The given number is Odd.")
 
 """revere"""
-x = 'my class name is transglobe multimedia education campus'
-print(x[0:2],x[7:2:-1]+x[8:13],x[15:13:-1]+x[16:27],x[37:27:-1]+x[38:48],x[54:48:-1])
+# x = 'my class name is transglobe multimedia education campus'
+# print(x[0:2],x[7:2:-1]+x[8:13],x[15:13:-1]+x[16:27],x[37:27:-1]+x[38:48],x[54:48:-1])
+
+"""Match-case"""
+# x = int(input("Enter a number:"))
+# y = int(input("Enter a number:"))
+# value = (x!=y)
+# match value:
+#     case True:
+#         print("x and y are not equal.")
+#     case False:
+#         print("x and y are equal.")
