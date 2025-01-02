@@ -5,6 +5,8 @@
 
 # for loop 
 # x = 4
+# for i in [1,2,3,4,5,6,7,8,9,10]:
+#     print(i)
 # for x in range(75):
 #     if x<18:
 #         print("Children")
