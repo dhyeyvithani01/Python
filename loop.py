@@ -81,6 +81,18 @@
 #     x+=1
 
 
+"""infinite loop in while"""
+# while True:
+#     x = int(input("enter a positive number:\n"))
+#     if x>=0:
+#         break
+# print()
+# for i in range(1,x+1):
+#     print(i)
+# print()
+# print(f"{x} is a positive integer.")
+
+
 """"odd even in while loop"""
 # x = 1
 # while x<11:
@@ -181,6 +193,7 @@
 #     for a in range(i):
 #         print("*")
 
+# print("What's your name?\n"*3,end="")
 """printing patterns"""
 """patterns-1"""
 # x = int( input("Enter Row Number: ") )
