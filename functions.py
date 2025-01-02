@@ -271,3 +271,17 @@ def Phibonachi():
 # import qrcode
 # x = qrcode.make("https://www.w3schools.com/python/trypython.asp?filename=demo_default")
 # x.save('1.png')
+
+"""Printing hello using def"""
+# def main():
+#     number=get_number()
+#     hello(number)
+# def get_number():
+#     while True:
+#         n=int(input("Enter the number:"))
+#         if n>0:
+#             return n
+# def hello(n):
+#     for i in range(n):
+#         print("Hello")
+# main()
