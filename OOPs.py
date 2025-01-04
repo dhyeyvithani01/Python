@@ -54,8 +54,10 @@
 
 
 
-# hello = [1,2,3,4,5]
-# its = iter(hello)
-# print(next(its))
-# print(next(its))
-# print(its.__next__())
+hello = [1,2,3,4,5]
+its = iter(hello)
+print(next(its))
+print(next(its))
+print(its.__next__())
+print(its.__next__())
+print(its.__next__())
