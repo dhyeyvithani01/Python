@@ -82,3 +82,12 @@
 
 
 # main()
+
+
+"""Error handling and Exceptions"""
+try:
+    x=int(input("What's X?"))
+    print(f"x is {x}.")
+except ValueError:
+    print("Invalid input. Enter a valid integer.")
+    
