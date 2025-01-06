@@ -90,13 +90,19 @@ def main():
     print(f"X is {y}")
 
 def get_int():
+# Case 1:you can tighten up you're code like this
     while True:
         try:
-            x=int(input("What's X? "))
+            return int(input("What's X? "))
         except ValueError:
             print("Invalid input. Enter a valid integer.")
-        else:
-            break
-    return x
+# Case 2:you can also this code to under stand the code well
+    # while True:
+    #     try:
+    #         x=int(input("What's X? "))
+    #     except ValueError:
+    #         print("Invalid input. Enter a valid integer.")
+    #     else:
+    #         return x   #return is used to return value and also to break the program.
     
 main()
