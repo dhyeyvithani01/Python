@@ -86,14 +86,14 @@
 
 """Error handling and Exceptions"""
 def main():
-    y = get_int()
+    y = get_int("What's X? ")
     print(f"X is {y}")
 
-def get_int():
+def get_int(prompt):
 # Case 1:you can tighten up you're code like this
     while True:
         try:
-            return int(input("What's X? "))
+            return int(input(prompt))
         except ValueError:
             print("Invalid input. Enter a valid integer.")   # you can also useuse pass instead of printing this statement
             #pass
