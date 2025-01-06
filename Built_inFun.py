@@ -95,7 +95,8 @@ def get_int():
         try:
             return int(input("What's X? "))
         except ValueError:
-            print("Invalid input. Enter a valid integer.")
+            print("Invalid input. Enter a valid integer.")   # you can also useuse pass instead of printing this statement
+            #pass
 # Case 2:you can also this code to under stand the code well
     # while True:
     #     try:
