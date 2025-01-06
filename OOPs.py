@@ -64,55 +64,81 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+"""inheritence"""
 
 # Single Inheritance
-class Dog:
-    def __init__(self, name):
-        self.name = name
+# class Dog:
+#     def __init__(self, name):
+#         self.name = name
 
-    def display_name(self):
-        print(f"Dog's Name: {self.name}")
+#     def display_name(self):
+#         print(f"Dog's Name: {self.name}")
 
-class Labrador(Dog):  # Single Inheritance
-    def sound(self):
-        print("Labrador woofs")
+# class Labrador(Dog):  # Single Inheritance
+#     def sound(self):
+#         print("Labrador woofs")
 
-# Multilevel Inheritance
-class GuideDog(Labrador):  # Multilevel Inheritance
-    def guide(self):
-        print(f"{self.name}Guides the way!")
+# # Multilevel Inheritance
+# class GuideDog(Labrador):  # Multilevel Inheritance
+#     def guide(self):
+#         print(f"{self.name}Guides the way!")
 
-# # Multiple Inheritance
-class Friendly:
-    def greet(self):
-        print("Friendly!")
+# # # Multiple Inheritance
+# class Friendly:
+#     def greet(self):
+#         print("Friendly!")
 
-class GoldenRetriever(Dog, Friendly):  # Multiple Inheritance
-    def sound(self):
-        print("Golden Retriever Barks")
+# class GoldenRetriever(Dog, Friendly):  # Multiple Inheritance
+#     def sound(self):
+#         print("Golden Retriever Barks")
 
 # Example Usage
-lab = Labrador("Buddy")
-lab.display_name()
-lab.sound()
+# lab = Labrador("Buddy")
+# lab.display_name()
+# lab.sound()
 
-guide_dog = GuideDog("Max")
-guide_dog.display_name()
-guide_dog.guide()
+# guide_dog = GuideDog("Max")
+# guide_dog.display_name()
+# guide_dog.guide()
 
-retriever = GoldenRetriever("Charlie")
-retriever.display_name()
-retriever.greet()
-retriever.sound()
+# retriever = GoldenRetriever("Charlie")
+# retriever.display_name()
+# retriever.greet()
+# retriever.sound()
+
+
+
+"""polymorphism"""
+
+
+
+
+# Parent Class
+# class Dog:
+#     def sound(self):
+#         print("dog sound")  # Default implementation
+
+# # Run-Time Polymorphism: Method Overriding
+# class Labrador(Dog):
+#     def sound(self):
+#         print("Labrador woofs")  # Overriding parent method
+
+# class Beagle(Dog):
+#     def sound(self):
+#         print("Beagle Barks")  # Overriding parent method
+
+# # Compile-Time Polymorphism: Method Overloading Mimic
+# class Calculator:
+#     def add(self, a, b=0, c=0):
+#         return a + b + c  # Supports multiple ways to call add()
+
+# # Run-Time Polymorphism
+# dogs = [Dog(), Labrador(), Beagle()]
+# for dog in dogs:
+#     dog.sound()  # Calls the appropriate method based on the object type
+
+
+# # Compile-Time Polymorphism (Mimicked using default arguments)
+# calc = Calculator()
+# print(calc.add(5, 10))  # Two arguments
+# print(calc.add(5, 10, 15))  # Three arguments
