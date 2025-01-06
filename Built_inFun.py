@@ -85,9 +85,18 @@
 
 
 """Error handling and Exceptions"""
-try:
-    x=int(input("What's X?"))
-    print(f"x is {x}.")
-except ValueError:
-    print("Invalid input. Enter a valid integer.")
+def main():
+    y = get_int()
+    print(f"X is {y}")
+
+def get_int():
+    while True:
+        try:
+            x=int(input("What's X? "))
+        except ValueError:
+            print("Invalid input. Enter a valid integer.")
+        else:
+            break
+    return x
     
+main()
