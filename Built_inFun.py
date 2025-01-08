@@ -108,13 +108,13 @@
     
 # main()
 
-import random
+# import random
 # population = ["cat","dog","lion"]
 # population_1 = ["cat","dog","lion"]
 # W=[3,6,9]
 # print(random.choices(population,weights=W,k=9))
 # print(random.choices(population_1,cum_weights=W,k=9))
-y=["A","B","C","D","E","F","G"]
-random.shuffle(y)
-for i in y:
-    print(i)
+# y=["A","B","C","D","E","F","G"]
+# random.shuffle(y)
+# for i in y:
+#     print(i)
