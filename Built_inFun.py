@@ -144,3 +144,9 @@ import sys
 
 # for args in sys.argv[1:]:# here "1:" is used to start the loop from index 1
 #     print("My name is",args)
+"""Cowsay"""
+import cowsay
+import sys
+
+if len(sys.argv)==2:
+    cowsay.cow("hello "+ sys.argv[1])
