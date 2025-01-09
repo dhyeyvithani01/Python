@@ -127,9 +127,11 @@
 # print(statistics.median([1,4,666,7,9]))
 """Sys"""
 import sys
-if len(sys.argv)<2:
-    print("too few arguments!!")
-elif len(sys.argv)>2:
-    print("Too many arguments!!")
-else:
+
+try:
     print("my name is",sys.argv[1])
+except IndexError:
+    if len(sys.argv)<2:
+        print("too few arguments!!")
+    elif len(sys.argv)>2:
+        print("Too many arguments!!")
