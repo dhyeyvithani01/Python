@@ -127,11 +127,17 @@
 # print(statistics.median([1,4,666,7,9]))
 """Sys"""
 import sys
-
-try:
-    print("my name is",sys.argv[1])
-except IndexError:
-    if len(sys.argv)<2:
-        print("too few arguments!!")
-    elif len(sys.argv)>2:
-        print("Too many arguments!!")
+"""1"""
+# try:
+#     print("my name is",sys.argv[1])
+# except IndexError:
+#     if len(sys.argv)<2:
+#         print("too few arguments!!")
+#     elif len(sys.argv)>2:
+#         print("Too many arguments!!")
+"""1"""
+# if len(sys.argv)<2:
+#     sys.exit("too few arguments!!")
+# elif len(sys.argv)>2:
+#     sys.exit("Too many arguments!!")
+# print("my name is",sys.argv[1])
