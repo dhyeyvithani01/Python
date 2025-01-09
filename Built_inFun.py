@@ -141,3 +141,6 @@ import sys
 # elif len(sys.argv)>2:
 #     sys.exit("Too many arguments!!")
 # print("my name is",sys.argv[1])
+
+# for args in sys.argv[1:]:# here "1:" is used to start the loop from index 1
+#     print("My name is",args)
