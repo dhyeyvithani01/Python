@@ -127,4 +127,4 @@
 # print(statistics.median([1,4,666,7,9]))
 """Sys"""
 import sys
-print("my name is",sys.argv[1])
+print("my name is",sys.argv[1],sys.argv[2])
