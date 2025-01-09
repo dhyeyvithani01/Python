@@ -108,6 +108,8 @@
     
 # main()
 
+"""Libraries"""
+"""Random"""
 # import random
 # population = ["cat","dog","lion"]
 # population_1 = ["cat","dog","lion"]
@@ -118,3 +120,11 @@
 # random.shuffle(y)
 # for i in y:
 #     print(i)
+"""statistics"""
+# import statistics
+# print(statistics.mean([1,2,3,4,5]))
+# print(statistics.fmean([2.5,3.0,7.0,18.0]))
+# print(statistics.median([1,4,666,7,9]))
+"""Sys"""
+import sys
+print("my name is",sys.argv[1])
