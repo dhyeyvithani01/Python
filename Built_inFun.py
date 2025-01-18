@@ -147,6 +147,12 @@ import sys
 """Cowsay"""
 import cowsay
 import sys
+"""printing cow using ASCII art"""
+cowsay.cow("hello")
 
+"""printing trex using ASCII art"""
 if len(sys.argv)==2:
     cowsay.trex("hello "+ sys.argv[1])
+
+"""printing penguin using ASCII art"""
+cowsay.tux("I am Tux the penguin!")
