@@ -159,6 +159,7 @@ import sys
 # cowsay.tux("I am Tux the penguin!")
 
 """Turtle"""
+"""1"""
 ##import package
 # import turtle
 # # loop for pattern
@@ -176,7 +177,7 @@ import sys
 # # change the direction
 #     turtle.left(180)
 
-
+"""2"""
 # #import package
 # import turtle
 # # loop for pattern 
@@ -186,7 +187,7 @@ import sys
 # # motion for pattern 
 #     turtle.forward(50+10*i) 
 #     turtle.right(90)
-
+"""3"""
 # # import package and making object
 # import turtle
 # screen = turtle.Screen()
@@ -241,7 +242,7 @@ import sys
 # # for hiding the turtle
 # turtle.hideturtle()
 
-
+"""4"""
 # # import the time module 
 # import time 
 
