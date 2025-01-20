@@ -144,15 +144,45 @@ import sys
 
 # for args in sys.argv[1:]:# here "1:" is used to start the loop from index 1
 #     print("My name is",args)
+
 """Cowsay"""
-import cowsay
-import sys
-"""printing cow using ASCII art"""
-cowsay.cow("hello")
+# import cowsay
+# import sys
+# """printing cow using ASCII art"""
+# cowsay.cow("hello")
 
-"""printing trex using ASCII art"""
-if len(sys.argv)==2:
-    cowsay.trex("hello "+ sys.argv[1])
+# """printing trex using ASCII art"""
+# if len(sys.argv)==2:
+#     cowsay.trex("hello "+ sys.argv[1])
 
-"""printing penguin using ASCII art"""
-cowsay.tux("I am Tux the penguin!")
+# """printing penguin using ASCII art"""
+# cowsay.tux("I am Tux the penguin!")
+
+
+"""import package"""
+# import turtle
+# # loop for pattern
+# for i in range(4):
+# # motion
+#     turtle.forward(100)
+#     turtle.right(90)
+#     turtle.forward(20)
+#     turtle.right(90)
+#     turtle.forward(100)
+# # set the y coordinate 
+#     turtle.up()
+#     turtle.sety(-40*(i+1))
+#     turtle.down()
+# # change the direction
+#     turtle.left(180)
+
+
+"""import package""" 
+import turtle
+# loop for pattern 
+for i in range(50): 
+# set turtle speed 
+    turtle.speed(50-i) 
+# motion for pattern 
+    turtle.forward(50+10*i) 
+    turtle.right(90)
