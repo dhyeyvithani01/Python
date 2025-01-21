@@ -7,4 +7,5 @@ def test_default():
 def test_arguments():
     assert hello("Dhyey")=="Hello, Dhyey"
 
-hello("Dhyey")
+print(hello())
+print(hello("Dhyey"))
