@@ -1,5 +1,5 @@
 def main():
-    Name = input("What's your name ?")
+    Name = input("What's your name ?\n")
     print(hello(Name))
 
 def hello(To="World"):
