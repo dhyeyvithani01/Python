@@ -1,5 +1,5 @@
-name = input("What's your name? ")
-
 file=open("name.txt","w")
-file.write(name)
+for _ in range(3):
+    name = input("What's your name? ")
+    file.write(name)
 file.close()
