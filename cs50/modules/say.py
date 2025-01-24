@@ -1,7 +1,7 @@
 import sys
 
-from cs50.saying import hello
-from cs50.saying import goodbye
+from cs50.modules.saying import hello
+from cs50.modules.saying import goodbye
 
 if len(sys.argv)==3:
     hello(sys.argv[1])
