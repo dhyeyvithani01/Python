@@ -1,4 +1,4 @@
-from hello import hello
+from cs50.test.hello import hello
 
 
 def test_default():
