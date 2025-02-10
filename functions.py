@@ -272,8 +272,9 @@ def Phibonachi():
 # x = qrcode.make("https://monkeytype.com/")
 # x.save('1.png')
 
+"""1 link = 10 qrcode"""
 import qrcode
 x = qrcode.make("https://www.w3schools.com/python/trypython.asp")
 a=1
 for a in range (1,11):
-    x.save(f'{a}.png')
+    x.save(f'a{a}.png')
