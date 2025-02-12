@@ -9,5 +9,8 @@ with open("students.csv","r") as file:
 def get_name(student):
     return student["name"]
 
-for student in sorted(students,key=get_name):
+def get_house(student):
+    return student["house"]
+
+for student in sorted(students,key=get_house,reverse=True):
     print(f"{student['name']} is in {student['house']}")
