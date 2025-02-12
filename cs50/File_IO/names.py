@@ -9,10 +9,6 @@
 
 # for i in sorted(names, reverse=True):             #'sorted' for sorting names and 'reverse=true' is used for reverse function of sorted
 #     print(f"Hello, {i}")
-"""method-2"""
-# with open("names.csv","r") as file:
-#     for line in sorted(file,reverse=True):
-#         print("Hello",line.rstrip())
 
 
 
