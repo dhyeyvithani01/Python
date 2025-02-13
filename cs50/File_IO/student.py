@@ -36,9 +36,9 @@ import csv
 #     for name,house,home in reader:
 #         students.append({"name":name,"house":house,"home":home})
 
-choice = input("enter 1 to read file.\nenter 2 to write into file.")
+choice = input("enter 1 to read file.\nenter 2 to write into file.\n")
 """using Dictreader method"""
-if choice == 1:
+if choice==1:
     with open("students.csv","r") as file:
         reader = csv.DictReader(file)
         for row in reader:
