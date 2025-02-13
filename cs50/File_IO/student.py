@@ -5,7 +5,7 @@ students=[]
 #         name,house,home = line.rstrip().split(",")
 #         student ={"name":name,"house":house,"home":home}
 #         students.append(student)
-
+"""method-1 for sorting by defing function"""
 # def get_name(student):
 #     return student["name"]
 
@@ -18,8 +18,8 @@ students=[]
 
 """method-2 for sorting using lambda function"""
 
-for student in sorted(students,key=lambda student : student["name","home"]):
-    print(f"{student['name']} is in {student['house']}")
+# for student in sorted(students,key=lambda student : student["name","home"]):
+#     print(f"{student['name']} is in {student['house']}")
 
 
 import csv
@@ -36,17 +36,27 @@ import csv
 #     for name,house,home in reader:
 #         students.append({"name":name,"house":house,"home":home})
 
-
+choice = input("enter 1 to read file.\nenter 2 to write into file.")
 """using Dictreader method"""
-with open("students.csv","r") as file:
-    reader = csv.DictReader(file)
-    for row in reader:
-        students.append({"name":row['name'],"house":row['house'],"home":row['home']})
+if choice == 1:
+    with open("students.csv","r") as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            students.append({"name":row['name'],"house":row['house'],"home":row['home']})
 
+    for student in sorted(students,key=lambda student : student["name"]):
+        if student['home']!='Unknown':
+            print(f"{student['name']} is in {student['house']} and {student['name']} lives in {student['home']}.")
+        else:
+            print(f"{student['name']} is in {student['house']} and information about {student['name']}'s home is Unknown.")
+elif choice==2:
+    i=1
+    while i!=0:
+        name = input("Enter the name of student:")
+        home = input("Enter the adrees of home:")
+        house = input("Enter the name of house:")
 
-
-for student in sorted(students,key=lambda student : student["name"]):
-    if student['home']!='Unknown':
-        print(f"{student['name']} is in {student['house']} and {student['name']} lives in {student['home']}.")
-    else:
-        print(f"{student['name']} is in {student['house']} and information about {student['name']}'s home is Unknown.")
+        with open("students.csv","a") as file:
+            writer = csv.writer(file)
+            writer.writerow([name,home,house])
+        i=input("Enter 1 to Enter details of another student\nEnter 0 to exit the program.")
