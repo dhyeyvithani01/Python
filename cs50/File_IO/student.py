@@ -51,7 +51,7 @@ if choice==1:
         else:
             print(f"{student['name']} is in {student['house']} and information about {student['name']}'s home is Unknown.")
 elif choice==2:
-    i=int(1)
+    i=int()
     while i!=0:
         name = input("Enter the name of student:")
         home = input("Enter the address of home:")
