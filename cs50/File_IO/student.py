@@ -51,7 +51,7 @@ if choice==1:
         else:
             print(f"{student['name']} is in {student['house']} and information about {student['name']}'s home is Unknown.")
 elif choice==2:
-    i=int()
+    i=int(1)
     while i!=0:
         name = input("Enter the name of student:")
         home = input("Enter the address of home:")
@@ -60,4 +60,4 @@ elif choice==2:
         with open("students.csv","a",newline="") as file:
             writer = csv.writer(file)
             writer.writerow([name,home,house])
-        i=input("\nEnter 1 to Enter details of another student\nEnter 0 to exit the program.\n")
+        i=int(input("\nEnter 1 to Enter details of another student\nEnter 0 to exit the program.\n"))
