@@ -36,7 +36,7 @@ import csv
 #     for name,house,home in reader:
 #         students.append({"name":name,"house":house,"home":home})
 
-choice = input("enter 1 to read file.\nenter 2 to write into file.\n")
+choice = int(input("enter 1 to read file.\nenter 2 to write into file.\n"))
 """using Dictreader method"""
 if choice==1:
     students=[]
@@ -51,7 +51,7 @@ if choice==1:
         else:
             print(f"{student['name']} is in {student['house']} and information about {student['name']}'s home is Unknown.")
 elif choice==2:
-    i=1
+    i=int(1)
     while i!=0:
         name = input("Enter the name of student:")
         home = input("Enter the adrees of home:")
