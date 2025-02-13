@@ -2,8 +2,8 @@ students=[]
 
 with open("students.csv","r") as file:
     for line in file:
-        name,house = line.rstrip().split(",")
-        student ={"name":name,"house":house}
+        name,house,home = line.rstrip().split(",")
+        student ={"name":name,"house":house,"home":home}
         students.append(student)
 
 # def get_name(student):
@@ -18,5 +18,5 @@ with open("students.csv","r") as file:
 
 """method-2 for sorting using lambda function"""
 
-for student in sorted(students,key=lambda student : student["name"]):
+for student in sorted(students,key=lambda student : student["name","home"]):
     print(f"{student['name']} is in {student['house']}")
