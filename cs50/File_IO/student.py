@@ -39,6 +39,7 @@ import csv
 choice = input("enter 1 to read file.\nenter 2 to write into file.\n")
 """using Dictreader method"""
 if choice==1:
+    students=[]
     with open("students.csv","r") as file:
         reader = csv.DictReader(file)
         for row in reader:
