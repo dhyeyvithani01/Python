@@ -54,10 +54,10 @@ elif choice==2:
     i=int(1)
     while i!=0:
         name = input("Enter the name of student:")
-        home = input("Enter the adrees of home:")
+        home = input("Enter the address of home:")
         house = input("Enter the name of house:")
 
         with open("students.csv","a",newline="") as file:
             writer = csv.writer(file)
             writer.writerow([name,home,house])
-        i=input("Enter 1 to Enter details of another student\nEnter 0 to exit the program.")
+        i=input("\nEnter 1 to Enter details of another student\nEnter 0 to exit the program.")
