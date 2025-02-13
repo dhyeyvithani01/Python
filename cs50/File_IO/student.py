@@ -24,17 +24,29 @@ for student in sorted(students,key=lambda student : student["name","home"]):
 
 import csv
 
+
+
+"""using reader method"""
+# with open("students.csv","r") as file:
+#     reader = csv.reader(file)
+#     """method-1"""
+#     # for row in reader:
+#     #     students.append({"name":row[0],"house":row[1],"home":row[2]})
+#     """method-2"""
+#     for name,house,home in reader:
+#         students.append({"name":name,"house":house,"home":home})
+
+
+"""using Dictreader method"""
 with open("students.csv","r") as file:
-    reader = csv.reader(file)
-    """method-1"""
-    # for row in reader:
-    #     students.append({"name":row[0],"house":row[1],"home":row[2]})
-    """method-2"""
-    for name,house,home in reader:
-        students.append({"name":name,"house":house,"home":home})
+    reader = csv.DictReader(file)
+    for row in reader:
+        students.append({"name":row['name'],"house":row['house'],"home":row['home']})
+
+
 
 for student in sorted(students,key=lambda student : student["name"]):
     if student['home']!='Unknown':
-        print(f"{student['name']} is in {student['house']} and {student['name']} lives in {student['home']}")
+        print(f"{student['name']} is in {student['house']} and {student['name']} lives in {student['home']}.")
     else:
         print(f"{student['name']} is in {student['house']} and information about {student['name']}'s home is Unknown.")
