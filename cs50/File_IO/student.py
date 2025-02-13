@@ -60,4 +60,4 @@ elif choice==2:
         with open("students.csv","a",newline="") as file:
             writer = csv.writer(file)
             writer.writerow([name,home,house])
-        i=input("\nEnter 1 to Enter details of another student\nEnter 0 to exit the program.")
+        i=input("\nEnter 1 to Enter details of another student\nEnter 0 to exit the program.\n")
