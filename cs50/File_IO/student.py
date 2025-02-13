@@ -58,6 +58,6 @@ elif choice==2:
         house = input("Enter the name of house:")
 
         with open("students.csv","a",newline="") as file:
-            writer = csv.writer(file)
-            writer.writerow([name,home,house])
+            writer = csv.DictWriter(file,fieldnames=["name","home","house"])
+            writer.writerow({"name":name,"home":home,"house":house})
         i=int(input("\nEnter 1 to Enter details of another student\nEnter 0 to exit the program.\n"))
