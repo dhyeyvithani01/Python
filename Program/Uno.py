@@ -206,6 +206,10 @@ GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
 YELLOW = (255, 255, 0)
 
+# Load card images
+CARD_WIDTH, CARD_HEIGHT = 80, 120
+card_images = {}
+
 # Card attributes
 COLORS = ["Red", "Green", "Blue", "Yellow"]
 VALUES = list(range(0, 10)) + ["Skip", "Reverse", "Draw Two"]
@@ -245,10 +249,20 @@ def draw_text(text, x, y, color=BLACK):
     label = font.render(text, True, color)
     screen.blit(label, (x, y))
 
+def draw_card(card, x, y):
+    color, value = card
+    pygame.draw.rect(screen, RED if color == "Red" else GREEN if color == "Green" else BLUE if color == "Blue" else YELLOW, (x, y, CARD_WIDTH, CARD_HEIGHT))
+    draw_text(str(value), x + 20, y + 40, WHITE)
+
 def draw_game():
     screen.fill(WHITE)
     draw_text(f"Top Card: {discard_pile[-1]}", 50, 50, RED)
-    draw_text(f"Your Hand: {players[0]}", 50, 150, BLUE)
+    
+    x_offset = 50
+    for card in players[0]:
+        draw_card(card, x_offset, 150)
+        x_offset += CARD_WIDTH + 10
+    
     pygame.display.flip()
 
 # Game loop
