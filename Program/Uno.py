@@ -317,78 +317,78 @@
 
 # pygame.quit()
 """uno text based"""
-import random
+# import random
 
-# Card attributes
-COLORS = ["Red", "Green", "Blue", "Yellow"]
-VALUES = list(range(0, 10)) + ["Skip", "Reverse", "Draw Two"]
-SPECIAL_CARDS = ["Wild", "Wild Draw Four"]
+# # Card attributes
+# COLORS = ["Red", "Green", "Blue", "Yellow"]
+# VALUES = list(range(0, 10)) + ["Skip", "Reverse", "Draw Two"]
+# SPECIAL_CARDS = ["Wild", "Wild Draw Four"]
 
-def generate_deck():
-    deck = []
-    for color in COLORS:
-        for value in VALUES:
-            deck.append((color, value))
-            if value != 0:
-                deck.append((color, value))
-    for special in SPECIAL_CARDS:
-        deck.extend([(None, special)] * 4)
-    random.shuffle(deck)
-    return deck
+# def generate_deck():
+#     deck = []
+#     for color in COLORS:
+#         for value in VALUES:
+#             deck.append((color, value))
+#             if value != 0:
+#                 deck.append((color, value))
+#     for special in SPECIAL_CARDS:
+#         deck.extend([(None, special)] * 4)
+#     random.shuffle(deck)
+#     return deck
 
-def get_playable_cards(hand, top_card):
-    color, value = top_card
-    return [card for card in hand if card[0] == color or card[1] == value or card[0] is None]
+# def get_playable_cards(hand, top_card):
+#     color, value = top_card
+#     return [card for card in hand if card[0] == color or card[1] == value or card[0] is None]
 
-def play_uno(num_players):
-    players = {i: [] for i in range(num_players)}
-    deck = generate_deck()
-    discard_pile = [deck.pop()]
+# def play_uno(num_players):
+#     players = {i: [] for i in range(num_players)}
+#     deck = generate_deck()
+#     discard_pile = [deck.pop()]
     
-    for _ in range(7):
-        for i in range(num_players):
-            players[i].append(deck.pop())
+#     for _ in range(7):
+#         for i in range(num_players):
+#             players[i].append(deck.pop())
     
-    turn = 0
-    reverse = False
+#     turn = 0
+#     reverse = False
     
-    while True:
-        print(f"\nTop card: {discard_pile[-1]}")
-        print(f"Player {turn+1}'s turn. Your hand: {players[turn]}")
+#     while True:
+#         print(f"\nTop card: {discard_pile[-1]}")
+#         print(f"Player {turn+1}'s turn. Your hand: {players[turn]}")
         
-        playable_cards = get_playable_cards(players[turn], discard_pile[-1])
-        if playable_cards:
-            print(f"Playable cards: {playable_cards}")
-            choice = int(input("Select a card index to play: "))
-            selected_card = players[turn].pop(choice)
-            discard_pile.append(selected_card)
+#         playable_cards = get_playable_cards(players[turn], discard_pile[-1])
+#         if playable_cards:
+#             print(f"Playable cards: {playable_cards}")
+#             choice = int(input("Select a card index to play: "))
+#             selected_card = players[turn].pop(choice)
+#             discard_pile.append(selected_card)
             
-            if selected_card[1] == "Reverse":
-                reverse = not reverse
-            elif selected_card[1] == "Skip":
-                turn = (turn + (1 if not reverse else -1)) % num_players
-            elif selected_card[1] == "Draw Two":
-                next_turn = (turn + (1 if not reverse else -1)) % num_players
-                players[next_turn].extend([deck.pop(), deck.pop()])
-            elif selected_card[1] == "Wild" or selected_card[1] == "Wild Draw Four":
-                new_color = input("Choose a color (Red, Green, Blue, Yellow): ")
-                discard_pile.append((new_color, selected_card[1]))
-                if selected_card[1] == "Wild Draw Four":
-                    next_turn = (turn + (1 if not reverse else -1)) % num_players
-                    players[next_turn].extend([deck.pop(), deck.pop(), deck.pop(), deck.pop()])
-        else:
-            print("No playable cards. Drawing a card...")
-            players[turn].append(deck.pop())
+#             if selected_card[1] == "Reverse":
+#                 reverse = not reverse
+#             elif selected_card[1] == "Skip":
+#                 turn = (turn + (1 if not reverse else -1)) % num_players
+#             elif selected_card[1] == "Draw Two":
+#                 next_turn = (turn + (1 if not reverse else -1)) % num_players
+#                 players[next_turn].extend([deck.pop(), deck.pop()])
+#             elif selected_card[1] == "Wild" or selected_card[1] == "Wild Draw Four":
+#                 new_color = input("Choose a color (Red, Green, Blue, Yellow): ")
+#                 discard_pile.append((new_color, selected_card[1]))
+#                 if selected_card[1] == "Wild Draw Four":
+#                     next_turn = (turn + (1 if not reverse else -1)) % num_players
+#                     players[next_turn].extend([deck.pop(), deck.pop(), deck.pop(), deck.pop()])
+#         else:
+#             print("No playable cards. Drawing a card...")
+#             players[turn].append(deck.pop())
         
-        if not players[turn]:
-            print(f"Player {turn+1} wins!")
-            break
+#         if not players[turn]:
+#             print(f"Player {turn+1} wins!")
+#             break
         
-        turn = (turn + (1 if not reverse else -1)) % num_players
+#         turn = (turn + (1 if not reverse else -1)) % num_players
 
-# Start game
-num_players = int(input("Enter number of players (2-4): "))
-if 2 <= num_players <= 4:
-    play_uno(num_players)
-else:
-    print("Invalid number of players. Exiting.")
+# # Start game
+# num_players = int(input("Enter number of players (2-4): "))
+# if 2 <= num_players <= 4:
+#     play_uno(num_players)
+# else:
+#     print("Invalid number of players. Exiting.")
