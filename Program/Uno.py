@@ -187,112 +187,132 @@
     
 #     next_turn()
 """Gui based uno card"""
-import pygame
-import random
+# import pygame
+# import random
 
-# Initialize Pygame
-pygame.init()
+# # Initialize Pygame
+# pygame.init()
 
-# Screen settings
-WIDTH, HEIGHT = 800, 600
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("UNO Game")
+# # Screen settings
+# WIDTH, HEIGHT = 800, 600
+# screen = pygame.display.set_mode((WIDTH, HEIGHT))
+# pygame.display.set_caption("UNO Game - 2 Player")
 
-# Colors
-WHITE = (255, 255, 255)
-BLACK = (0, 0, 0)
-RED = (255, 0, 0)
-GREEN = (0, 255, 0)
-BLUE = (0, 0, 255)
-YELLOW = (255, 255, 0)
+# # Colors
+# WHITE = (255, 255, 255)
+# BLACK = (0, 0, 0)
+# RED = (255, 0, 0)
+# GREEN = (0, 255, 0)
+# BLUE = (0, 0, 255)
+# YELLOW = (255, 255, 0)
+# GRAY = (169, 169, 169)
 
-# Load card images
-CARD_WIDTH, CARD_HEIGHT = 80, 120
+# # Load card images
+# CARD_WIDTH, CARD_HEIGHT = 80, 120
+# FPS = 60
+# clock = pygame.time.Clock()
 
-# Card attributes
-COLORS = ["Red", "Green", "Blue", "Yellow"]
-VALUES = list(range(0, 10)) + ["Skip", "Reverse", "Draw Two"]
-SPECIAL_CARDS = ["Wild", "Wild Draw Four"]
+# # Card attributes
+# COLORS = ["Red", "Green", "Blue", "Yellow"]
+# VALUES = list(range(0, 10)) + ["Skip", "Reverse", "Draw Two"]
+# SPECIAL_CARDS = ["Wild", "Wild Draw Four"]
 
-# Generate a deck of UNO cards
-def generate_deck():
-    deck = []
-    for color in COLORS:
-        for value in VALUES:
-            deck.append((color, value))
-            if value != 0:
-                deck.append((color, value))
-    for special in SPECIAL_CARDS:
-        deck.extend([(None, special)] * 4)
-    random.shuffle(deck)
-    return deck
+# def generate_deck():
+#     deck = []
+#     for color in COLORS:
+#         for value in VALUES:
+#             deck.append((color, value))
+#             if value != 0:
+#                 deck.append((color, value))
+#     for special in SPECIAL_CARDS:
+#         deck.extend([(None, special)] * 4)
+#     random.shuffle(deck)
+#     return deck
 
-# Initialize game
-NUM_PLAYERS = 2
-players = {i: [] for i in range(NUM_PLAYERS)}
-deck = generate_deck()
+# NUM_PLAYERS = 2
+# players = {i: [] for i in range(NUM_PLAYERS)}
+# deck = generate_deck()
 
-# Distribute initial cards
-for _ in range(7):
-    for i in range(NUM_PLAYERS):
-        players[i].append(deck.pop())
+# def draw_card_animation():
+#     for i in range(10):
+#         screen.fill(WHITE)
+#         pygame.draw.rect(screen, GRAY, (WIDTH//2 - 40, HEIGHT//2 - 60, CARD_WIDTH, CARD_HEIGHT))
+#         pygame.display.flip()
+#         clock.tick(30)
 
-# Game state variables
-discard_pile = [deck.pop()]
-turn = 0
-reverse = False
-running = True
-font = pygame.font.Font(None, 36)
+# def draw_card_for_player(player):
+#     if deck:
+#         draw_card_animation()
+#         players[player].append(deck.pop())
 
-def draw_text(text, x, y, color=BLACK):
-    label = font.render(text, True, color)
-    screen.blit(label, (x, y))
+# for _ in range(7):
+#     for i in range(NUM_PLAYERS):
+#         players[i].append(deck.pop())
 
-def draw_card(card, x, y):
-    color, value = card
-    pygame.draw.rect(screen, RED if color == "Red" else GREEN if color == "Green" else BLUE if color == "Blue" else YELLOW, (x, y, CARD_WIDTH, CARD_HEIGHT))
-    draw_text(str(value), x + 20, y + 40, WHITE)
+# discard_pile = [deck.pop()]
+# turn = 0
+# reverse = False
+# running = True
+# font = pygame.font.Font(None, 36)
 
-def get_playable_cards(hand, top_card):
-    color, value = top_card
-    return [card for card in hand if card[0] == color or card[1] == value or card[0] is None]
+# def draw_text(text, x, y, color=BLACK):
+#     label = font.render(text, True, color)
+#     screen.blit(label, (x, y))
 
-def draw_game():
-    screen.fill(WHITE)
-    draw_text(f"Top Card: {discard_pile[-1]}", 50, 50, RED)
+# def draw_card(card, x, y):
+#     color, value = card
+#     pygame.draw.rect(screen, RED if color == "Red" else GREEN if color == "Green" else BLUE if color == "Blue" else YELLOW, (x, y, CARD_WIDTH, CARD_HEIGHT))
+#     draw_text(str(value), x + 20, y + 40, WHITE)
+
+# def get_playable_cards(hand, top_card):
+#     color, value = top_card
+#     return [card for card in hand if card[0] == color or card[1] == value or card[0] is None]
+
+# def draw_game():
+#     screen.fill(WHITE)
     
-    x_offset = 50
-    for card in players[0]:
-        draw_card(card, x_offset, 450)
-        x_offset += CARD_WIDTH + 10
+#     # Draw top card of discard pile
+#     draw_card(discard_pile[-1], WIDTH//2 - 40, HEIGHT//2 - 60)
     
-    pygame.display.flip()
-
-def check_card_click(mouse_x, mouse_y):
-    x_offset = 50
-    for index, card in enumerate(players[0]):
-        if x_offset <= mouse_x <= x_offset + CARD_WIDTH and 450 <= mouse_y <= 450 + CARD_HEIGHT:
-            return index
-        x_offset += CARD_WIDTH + 10
-    return None
-
-# Game loop
-while running:
-    screen.fill(WHITE)
-    draw_game()
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
-        elif event.type == pygame.MOUSEBUTTONDOWN:
-            mouse_x, mouse_y = event.pos
-            selected_card_index = check_card_click(mouse_x, mouse_y)
-            if selected_card_index is not None:
-                selected_card = players[0][selected_card_index]
-                if selected_card in get_playable_cards(players[0], discard_pile[-1]):
-                    players[0].remove(selected_card)
-                    discard_pile.append(selected_card)
-                    turn = 1  # AI turn (can be expanded later)
+#     x_offset = 50
+#     for card in players[turn]:
+#         draw_card(card, x_offset, 450 if turn == 0 else 150)
+#         x_offset += CARD_WIDTH + 10
     
-    pygame.display.update()
+#     pygame.draw.rect(screen, GRAY, (WIDTH//2 - 40, HEIGHT//2, CARD_WIDTH, CARD_HEIGHT))
+#     draw_text("Draw", WIDTH//2 - 20, HEIGHT//2 + 50, BLACK)
+    
+#     pygame.display.flip()
 
-pygame.quit()
+# def check_card_click(mouse_x, mouse_y):
+#     x_offset = 50
+#     for index, card in enumerate(players[turn]):
+#         if x_offset <= mouse_x <= x_offset + CARD_WIDTH and (450 if turn == 0 else 150) <= mouse_y <= (450 if turn == 0 else 150) + CARD_HEIGHT:
+#             return index
+#         x_offset += CARD_WIDTH + 10
+#     if WIDTH//2 - 40 <= mouse_x <= WIDTH//2 + 40 and HEIGHT//2 <= mouse_y <= HEIGHT//2 + CARD_HEIGHT:
+#         return "draw"
+#     return None
+
+# while running:
+#     screen.fill(WHITE)
+#     draw_game()
+#     for event in pygame.event.get():
+#         if event.type == pygame.QUIT:
+#             running = False
+#         elif event.type == pygame.MOUSEBUTTONDOWN:
+#             mouse_x, mouse_y = event.pos
+#             selected_card_index = check_card_click(mouse_x, mouse_y)
+#             if selected_card_index == "draw":
+#                 draw_card_for_player(turn)
+#             elif isinstance(selected_card_index, int):
+#                 selected_card = players[turn][selected_card_index]
+#                 if selected_card in get_playable_cards(players[turn], discard_pile[-1]):
+#                     players[turn].remove(selected_card)
+#                     discard_pile.append(selected_card)
+#                     turn = (turn + 1) % NUM_PLAYERS
+    
+#     pygame.display.update()
+#     clock.tick(FPS)
+
+# pygame.quit()
