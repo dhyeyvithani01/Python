@@ -208,7 +208,6 @@ YELLOW = (255, 255, 0)
 
 # Load card images
 CARD_WIDTH, CARD_HEIGHT = 80, 120
-card_images = {}
 
 # Card attributes
 COLORS = ["Red", "Green", "Blue", "Yellow"]
@@ -254,16 +253,28 @@ def draw_card(card, x, y):
     pygame.draw.rect(screen, RED if color == "Red" else GREEN if color == "Green" else BLUE if color == "Blue" else YELLOW, (x, y, CARD_WIDTH, CARD_HEIGHT))
     draw_text(str(value), x + 20, y + 40, WHITE)
 
+def get_playable_cards(hand, top_card):
+    color, value = top_card
+    return [card for card in hand if card[0] == color or card[1] == value or card[0] is None]
+
 def draw_game():
     screen.fill(WHITE)
     draw_text(f"Top Card: {discard_pile[-1]}", 50, 50, RED)
     
     x_offset = 50
     for card in players[0]:
-        draw_card(card, x_offset, 150)
+        draw_card(card, x_offset, 450)
         x_offset += CARD_WIDTH + 10
     
     pygame.display.flip()
+
+def check_card_click(mouse_x, mouse_y):
+    x_offset = 50
+    for index, card in enumerate(players[0]):
+        if x_offset <= mouse_x <= x_offset + CARD_WIDTH and 450 <= mouse_y <= 450 + CARD_HEIGHT:
+            return index
+        x_offset += CARD_WIDTH + 10
+    return None
 
 # Game loop
 while running:
@@ -272,6 +283,15 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            mouse_x, mouse_y = event.pos
+            selected_card_index = check_card_click(mouse_x, mouse_y)
+            if selected_card_index is not None:
+                selected_card = players[0][selected_card_index]
+                if selected_card in get_playable_cards(players[0], discard_pile[-1]):
+                    players[0].remove(selected_card)
+                    discard_pile.append(selected_card)
+                    turn = 1  # AI turn (can be expanded later)
     
     pygame.display.update()
 
