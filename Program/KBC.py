@@ -25,7 +25,7 @@ Question = [
 Level = [10000,20000,40000,80000,160000,320000,640000,1200000]
 
 for i in range(0,len(Question)):
-    print(f"Question for rs.{Level[i]} is {Question[i][0]}")
+    print(f"Question for rs.{Level[i]} is \n{Question[i][0]}")
     print(f"A. {Question[i][1]}  B. {Question[i][2]}")
     print(f"C. {Question[i][3]}  D. {Question[i][4]}")
 
@@ -34,5 +34,5 @@ for i in range(0,len(Question)):
         print(f"Correct answear, you have win Rs.{Level[i]}")
 
     else:
-        print("Wrong answer!")
+        print("Wrong answer!\nYou lost the game!!")
         break;
