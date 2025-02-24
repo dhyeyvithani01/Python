@@ -1,11 +1,11 @@
 def main():
-    name,house=get_student()
-    print(f"{name} from {house}")
+    student=get_student()
+    print(f"{student["name"]} from {student["house"]}")
     
 def get_student():
     name = input("Name : ")
     house = input("House : ")
-    return name,house
+    return {"name": name ,"house":house}
 
 if __name__ == "__main__":
     main()
