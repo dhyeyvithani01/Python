@@ -76,13 +76,13 @@ DVBDVJKN"""
 # y = int(input("Enter the second number:"))
 # z=x+y
 """here";," is used to add coma between zero acoording to us digit system."""
-# print(f"{z:,}")
+# print(f"{z,"jdvh"}")
 
 # x = y = z = "hello world"
 # print(x,y,z)
 """rounding the float number to specific digit"""
 # import math
-# x = round(math.pi,7)
+# x = round(math.pi,10)
 # print(x)
 
 # x = math.pi

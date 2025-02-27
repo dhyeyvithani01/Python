@@ -13,7 +13,7 @@
 # <,>,==,!=,<=,>=
 
 # print("grade:")
-# x = 93.50
+# x = int(input())
 # if x==0:
 #     print('Enter Valid marks')
 # elif x>=90:
@@ -27,7 +27,7 @@
 # else:
 #     print('F')
 
-"""nested if else"""
+# """nested if else"""
 # grade = float(input("enter your grade:"))
 # if grade > 80:
 #     print("A")
@@ -56,22 +56,22 @@
 #     print("Death")
 
 """ternary if else"""
-# # a,b = int(input())
-# # print(a,b)
-# a = float(input("Enter the value of A:"))
-# b = float(input("Enter the value of B:"))
-# print("A is equal to B" if a==b else "A is greater than B"if a>b else "B is greater than A")
+# a,b = int(input())
+# print(a,b)
+a = float(input("Enter the value of A:"))
+b = float(input("Enter the value of B:"))
+print("A is equal to B" if a==b else "A is greater than B"if a>b else "B is greater than A")
 
 """"odd-even"""
-# x = int(input("Enter any number:"))
-# if x%2==0:
-#     print("The given number is Even.")
-# else:
-#     print("The given number is Odd.")
+x = int(input("Enter any number:"))
+if x%2==0:
+    print("The given number is Even.")
+else:
+    print("The given number is Odd.")
 
 """revere"""
-# x = 'my class name is transglobe multimedia education campus'
-# print(x[0:2],x[7:2:-1]+x[8:13],x[15:13:-1]+x[16:27],x[37:27:-1]+x[38:48],x[54:48:-1])
+x = 'my class name is transglobe multimedia education campus'
+print(x[0:2],x[7:2:-1]+x[8:13],x[15:13:-1]+x[16:27],x[37:27:-1]+x[38:48],x[54:48:-1])
 
 """Match-case"""
 # x = int(input("Enter a number:"))

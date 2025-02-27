@@ -1,4 +1,4 @@
-# a = {1,2,4,7.13,'name',"",4.987}
+# a = {1,2,4,3,25,7.13,'name',"",4.987}
 # print(a)
 # a.add(10)
 # print(a)
@@ -28,9 +28,9 @@
 # q = {4,5,6,1}
 # print(p.isdisjoint(q))
 
-# v = {1,2,3,4,5,6}
-# u = {1,2,3}
-# w = {4,5,6,7,8}
-# print(u.issubset(v))
-# print(v.issuperset(u))
-# print(v.union(u).union(w))
+v = {1,2,3,4,5,6}
+u = {1,2,3}
+w = {4,5,6,7,8}
+print(u.issubset(v))
+print(v.issuperset(u))
+print(v.union(u).union(w))

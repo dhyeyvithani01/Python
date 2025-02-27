@@ -1,22 +1,22 @@
-"""x = 1
-y = 2
+# x = 1
+# y = 2
 
-# print(x)
-# print(y)
-# print(x,y)
+# # print(x)
+# # print(y)
+# # print(x,y)
 
-print(x+y)
-print(y-x)
-print(x*y)
-print(x/y)
+# print(x+y)
+# print(y-x)
+# print(x*y)
+# print(x/y)
 
-x = int(input('enter the number : '))
-y = int(input('enter the number : '))
+# x = int(input('enter the number : '))
+# y = int(input('enter the number : '))
 
-print(x+y)
-print(x-y)
-print(x*y)
-print(x/y)"""
+# print(x+y)
+# print(x-y)
+# print(x*y)
+# print(x/y)
 
 #true variable
 # x=1
@@ -50,9 +50,9 @@ print(x/y)"""
 # print(student["name"][1])
 
 # students={
-#     "Harry":"Poter",
-#     "Ron":"voughn",
-#     "Draco":"Joe"
+#     "1":"Poter",
+#     "2":"voughn",
+#     "3":"Joe"
 # }
 # for First_name in students:
 #     print(First_name,students[First_name])
@@ -65,7 +65,7 @@ Data = [
     {"Name":"Sam","Age":"23","Edu":"M.tech","Work":"A.I. Reseacher","Salary":"1000000"}
 ]
 # for i in Data:
-#     print(i["Name"],i["Age"],i["Edu"],i["Work"],i["Salary"],sep=", ")
+#     print(i["Name"],i["Age"],i["Edu"],i["Work"],i["Salary"],end="_______________")
 #     print()
 
 # print(Data[0])
