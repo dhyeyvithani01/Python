@@ -1,13 +1,13 @@
 # class Demo:
 
-#     def config():
-#         print("Hello my name")
-#     config()
+#     # def config():
+#     #     print("Hello my name")
+#     # config()
 
-#     def dh():
-#         print("dfghj")
-#     dh()
-# print(Demo)
+#     def dhyey():
+#         return "Hello, dhyey" 
+#     print(dhyey())
+# Demo()
 
 
 
