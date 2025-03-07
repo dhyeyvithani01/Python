@@ -1,11 +1,9 @@
 import random
 class Hat:
-    def __init__(self):
-        self.houses =["Gryffindor","Ravenclaw","Hufflepuff","Slytherin"]
+    houses =["Gryffindor","Ravenclaw","Hufflepuff","Slytherin"]
     
-    def sort(self,name):
-        house = random.choice(self.houses)
-        print(name,"is in",house)
+    @classmethod
+    def sort(cls,name):
+        print(name,"is in",random.choice(cls.houses))
 
-hat = Hat()
-hat.sort("Harry")
+Hat.sort("Harry")
