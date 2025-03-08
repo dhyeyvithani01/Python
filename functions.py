@@ -103,7 +103,7 @@ def Phibonachi():
 #     if len(i)==3:
 #         print(i)
 
-# """is_prime()"""
+"""is_prime()"""
 # def is_prime(n):
 #     if n in [2, 3]:
 #         return True
