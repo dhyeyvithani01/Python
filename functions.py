@@ -53,6 +53,7 @@ def odd_even():
         print("The given number is Odd.")
 
 """Phibonachi sequence"""
+"""method-1"""
 def Phibonachi():
     a, b = 0, 1
     n = int(input("enter the number: "))
@@ -60,6 +61,18 @@ def Phibonachi():
         print(a)
         a, b = b, a + b
 
+"""method-2"""
+# def fibonacci(n):
+#     if n <= 0:
+#         return 0
+#     elif n == 1:
+#         return 1
+#     else:
+#         return fibonacci(n-1) + fibonacci(n-2)
+
+# # Example: Print first 10 Fibonacci numbers
+# for i in range(10):
+#     print(fibonacci(i), end=" ")
 # A=int(input("print 1 to run Divisibilty_Check() program.\nprint 2 to run Result() program.\nprint 3 to run Compare_value().\nprint 4 to run odd_even() program.\nprint 5 to Phibonachi() program.:\n"))
 # if A == 1:
 #     Divisibilty_Check()
@@ -273,8 +286,12 @@ def Phibonachi():
 # x.save('1.png')
 
 """1 link = 10 qrcode"""
-import qrcode
-x = qrcode.make("https://www.w3schools.com/python/trypython.asp")
-a=1
-for a in range (1,11):
-    x.save(f'a{a}.png')
+# import qrcode
+# x = qrcode.make("https://www.w3schools.com/python/trypython.asp")
+# a=1
+# for a in range (1,11):
+#     x.save(f'a{a}.png')
+
+
+
+
