@@ -1,4 +1,14 @@
 def meow(n: int) -> str:
+    """
+    Meows n times.
+
+    :param n: Number of times of meow
+    :type n: int
+    :raise TypeError: If n is not an int
+    :return: A string of n meows, one per line
+    :rtype: str
+    """
+    #this is a restructered text, markdown language used for documentation.
     return "meow\n"*n
 
 number: int=int(input("Number: "))
