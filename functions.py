@@ -60,15 +60,15 @@ def Phibonachi():
     for i in range(n):
         print(a)
         a, b = b, a + b
-
+        
 """method-2"""
-# def fibonacci(n):
+# def fibonachi(n):
 #     if n <= 0:
 #         return 0
-#     elif n == 1:
+#     elif n = 1:
 #         return 1
 #     else:
-#         return fibonacci(n-1) + fibonacci(n-2)
+#         return fibonachi(n-1)+fibonachi(n-2)
 
 # # Example: Print first 10 Fibonacci numbers
 # for i in range(10):
