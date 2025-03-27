@@ -148,3 +148,13 @@
 
 
 """Encapsulation"""
+class Person:
+    def __init__(self, name):
+        self._name = name  # Private attribute
+
+    def _display(self):  # Private method
+        print("Name:", self._name)
+
+p = Person("Charlie")
+print(p._name)  # ❌ Error: AttributeError
+p._display()
