@@ -65,7 +65,7 @@ Data = [
     {"Name":"Sam","Age":"23","Edu":"M.tech","Work":"A.I. Reseacher","Salary":"1000000"}
 ]
 # for i in Data:
-#     print(i["Name"],i["Age"],i["Edu"],i["Work"],i["Salary"],end="_______________")
+#     print(i["Name"],i["Age"],i["Edu"],i["Work"],i["Salary"],end=" ")
 #     print()
 
 # print(Data[0])
